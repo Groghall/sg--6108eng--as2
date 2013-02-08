@@ -1,3 +1,72 @@
+== Welcome to The Oval Ski Club webiste.
+
+This doc will help you to get up and running generating and creating your own rails application includng html code.
+
+You may be required to download and install twitter bootstrap
+
+To aid with the navigation of the site a navigation bar has been added with dropdowns and a responsve layout.
+
+The layout of the site follows this initial map:
+
+home
+  |-- about
+  |   |-- sessions
+  |   |-- FAQ
+  |   |-- Contact
+  |   |-- Racing Team
+  |   |-- Events
+  |       
+  |-- sessions
+  |   
+  |-- Racing Team
+  |   |-- Sheffield Sharks link
+  |   
+  |-- contact
+  |
+  |-- FAQ
+  |
+  |-- Events
+  |   |-- new
+  |   |-- edit
+  |   |-- destroy
+  |   |-- view
+  |   `-- update
+
+
+== Home page
+The website is fronted with a home page that links to the about page for more detailed information.
+
+On the home page there is a carousel to entice visitors to view more of the club, I have nested just below this a hero-unit displaying a welcome from the club.
+
+In the footer there is a facebook icon tha links directly to the ski clubs group site.
+
+== About
+
+This section is laid out using the container class and the hero-unit which are from twitter bootstrap.
+
+from ths page there are 5 buttons that link to the key pages of the site.
+
+== Sessions
+
+Within this page you can see all tha avialable seesions that are on offer in a carousel format.
+
+== Racing Team
+
+This is hold all the current information for racing events using the hero-unit. There is also a button link to an external site were racing events take place.
+
+== Contact
+
+we have the primary forms of contact located here along with a googlemaps location nested within a fluid container to kepp it centered andresponsive.
+
+== FAQ 
+
+currently holds all questions and answers that the club feels are relevant all are nested within hero-units to keep a clean and polished look.
+
+== Events
+
+Within the events page we have adatabase that allows us to store our events that we create, edit or destroy.  
+
+
 == Welcome to Rails
 
 Rails is a web-application framework that includes everything needed to create

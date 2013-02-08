@@ -10,5 +10,7 @@ Welcome::Application.routes.draw do
   get 'welcome/team'
 
   get 'welcome/sessions'
+
+  get 'welcome/faq'
   
 end
