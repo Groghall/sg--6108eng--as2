@@ -1,4 +1,4 @@
-== Welcome to The Oval Ski Club webiste.
+== Welcome to The Oval Ski Club website.
 
 This doc will help you to get up and running generating and creating your own rails application includng html code.
 
