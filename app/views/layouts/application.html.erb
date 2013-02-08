@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+      <title>Oval Ski Club</title>
+      <%= stylesheet_link_tag    "application", :media => "all" %>
+      <%= javascript_include_tag "application" %>
+      <%= csrf_meta_tags %>
+    <link href="../assets/bootstrap.css" rel="stylesheet">
+    <link href="../assets/home.css" rel="stylesheet">
+    <link href="../assets/bootstrap-responsive.css" rel="stylesheet">
+  </head>
+
+<body>
+  <div class="navbar navbar-fixed-top">
+    <div class="navbar-inner">
+      <div class="container">
+          <a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </a>
+
+          <a class="brand" href="../welcome/index.html">OSC</a>
+          <div class="nav-collapse collapse">
+            <ul class="nav">
+              <li><a href="../welcome/index"><i class="icon-home icon-black"></i>Home</a></li>
+              <li class="dropdown">
+                <a href="../welcome/about" class="dropdown-toggle" data-toggle="dropdown">About <b class="caret"></b></a>
+                <ul class="dropdown-menu">
+                  <li><a href="../welcome/about">About</a></li>
+                  <li><a href="../welcome/team">Racing Team</a></li>
+                  <li><a href="../welcome/sessions">Sessions</a></li>
+                </ul>
+              </li>
+              <li><a href="../welcome/contact">Contact</a></li>
+              <li><a href="../events">Events</a></li>
+            </ul>
+
+            <ul class="nav pull-right">
+              <li class="dropdown">
+                <a href="OSC" class="dropdown-toggle" data-toggle="dropdown">Quick Links <b class="caret"></b></a>
+                <ul class="dropdown-menu">
+                  <li><a href="../welcome/index"><i class="icon-home icon-black"></i>Home</a></li>
+                  <li><a href="../welcome/about">About</a></li>
+                  <li><a href="../welcome/contact">Contact</a></li>
+                  <li><a href="../events">Events</a></li>
+                </ul>
+              </li>
+            </ul>
+
+            <form class="navbar-search">
+              <input type="text" class="search-query" placeholder="Search">
+            </form>
+          </div>
+        </div>
+      </div>
+      
+    </div>
+	
+	  <script src="js/jquery-1.9.0.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script>$(document).ready(function(){$('carousel').carousel()});</script>
+    <% flash.each do |key, value| %>
+    <%= content_tag(:div, value, :class => "flash #{key}") %>
+    <% end %>
+    <p class="flash"><%= flash.notice %></p>
+
+<%= yield %>
+
+</body>
+</html>
