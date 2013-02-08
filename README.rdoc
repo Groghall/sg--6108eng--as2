@@ -8,7 +8,8 @@ To aid with the navigation of the site a navigation bar has been added with drop
 
 The layout of the site follows this initial map:
 
-home
+|home
+|-|
   |-- about
   |   |-- sessions
   |   |-- FAQ
