@@ -1,5 +1,7 @@
 Welcome::Application.routes.draw do
   resources :events
+
+  root :to => 'welcome#index'
   
   get 'welcome/index'
 

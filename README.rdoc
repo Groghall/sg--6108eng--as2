@@ -2,7 +2,7 @@
 
 This doc will help you to get up and running generating and creating your own rails application includng html code.
 
-You may be required to download and install twitter bootstrap
+You may be required to download and install twitter bootstrap.
 
 To aid with the navigation of the site a navigation bar has been added with dropdowns and a responsve layout.
 
@@ -65,7 +65,7 @@ currently holds all questions and answers that the club feels are relevant all a
 
 == Events
 
-Within the events page we have adatabase that allows us to store our events that we create, edit or destroy.  
+Within the events page we have a database that allows us to store our events that we create, edit or destroy.  
 
 
 == Welcome to Rails
